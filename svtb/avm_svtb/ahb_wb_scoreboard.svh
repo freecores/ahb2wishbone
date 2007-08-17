@@ -5,7 +5,7 @@
 //File name		:	ahb_wb_scoreboard.svh	
 //Designer		: 	Sanjay kumar	
 //Date			: 	3rd Aug'2007		
-//Description		: 	ahb_wb_:Class to receive monitor packet from the publisher(monitor) and check for 
+//Description		: 	ahb_wb_scoreboard:Class to receive monitor packet from the publisher(monitor) and check for 
 // 				protocol matching. 
 //Revision		:	1.0
 //*****************************************************************************************************************
