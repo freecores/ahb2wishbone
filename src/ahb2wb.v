@@ -100,8 +100,9 @@ module ahb2wb(
 			hresp  <= 2'b00;
 			cyc_o <= 'b0;
 			stb_o <= 'b0;
-			addr_temp <= 'b0;
-			hwrite_temp <= 'b0;
+			addr_temp <= 'bx;
+			hwrite_temp <= 'bx;
+			dat_o <='bx;
 		end
 		else if(hready & hsel) begin
 			case (hburst)
@@ -147,7 +148,7 @@ module ahb2wb(
 	always@(hwrite_temp or hwdata or dat_i or ack_i or hresetn or stb_o ) begin
 		
 		if (!hresetn) begin
-			hready <= 'b1; 
+			hready <= 'b1;
 		end
 		else begin		
 			if (stb_o) 
